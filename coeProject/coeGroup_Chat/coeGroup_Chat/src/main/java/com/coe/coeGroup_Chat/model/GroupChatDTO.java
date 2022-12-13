@@ -1,10 +1,10 @@
 package com.coe.coeGroup_Chat.model;
 
 import com.coe.coeGroup_Chat.Entity.GroupChatEntity;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.io.Serializable;
 import java.util.Date;
-
 
 
 public class GroupChatDTO implements Serializable {
@@ -13,10 +13,13 @@ public class GroupChatDTO implements Serializable {
     private int id;
 
     private String name;
-
+    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date created_date;
 
     public GroupChatDTO(GroupChatEntity entity) {
+        this.id = entity.getId();
+        this.name = entity.getName();
+        this.created_date = entity.getCreated_date();
     }
 
 

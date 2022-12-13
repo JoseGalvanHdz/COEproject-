@@ -1,13 +1,13 @@
 package com.coe.coeGroup_Chat.Entity;
 
-import com.coeGroupChatProducer.ChatGroupProducer.model.GroupChatDTO;
+import com.coe.coeGroup_Chat.model.GroupChatDTO;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 
 import java.util.Date;
 
 @Entity
 @Table(name = "group_chat")
-
 public class GroupChatEntity {
 
     @Id

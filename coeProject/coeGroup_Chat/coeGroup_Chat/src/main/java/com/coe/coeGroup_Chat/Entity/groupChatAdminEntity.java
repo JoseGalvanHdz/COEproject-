@@ -11,7 +11,7 @@ public class groupChatAdminEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "customer_id",referencedColumnName ="id", nullable = false)
-    private customerEntity.Customer customer_id;
+    private CustomerEntity customer_id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "group_chat_id",referencedColumnName ="id", nullable = false)
@@ -25,11 +25,11 @@ public class groupChatAdminEntity {
         this.id = id;
     }
 
-    public customerEntity.Customer getCustomer_id() {
+    public CustomerEntity getCustomer_id() {
         return customer_id;
     }
 
-    public void setCustomer_id(customerEntity.Customer customer_id) {
+    public void setCustomer_id(CustomerEntity customer_id) {
         this.customer_id = customer_id;
     }
 
