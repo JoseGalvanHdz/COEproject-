@@ -3,13 +3,14 @@ package com.coe.coeGroup_Chat.Entity;
 import jakarta.persistence.*;
 import java.util.Date;
 
+/*
 enum Status {
     Sent,
     Received,
     Seen,
     Error
 }
-
+*/
 @Entity
 @Table(name = "chat_message")
 public class ChatMessageEntity {
@@ -19,7 +20,7 @@ public class ChatMessageEntity {
     private int id;
 
     @OneToOne
-    @JoinColumn(name = "chat_message_fk", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "chat_message_fk", referencedColumnName = "id")
     private ChatMessageEntity chatMessageId;
 
     @Column(name = "content", nullable = false)
@@ -28,9 +29,8 @@ public class ChatMessageEntity {
     @Column(name = "create_date", nullable = false)
     private Date createDate;
 
-    @Column(columnDefinition = "ENUM('ONLINE', 'OFFLINE')")
-    @Enumerated(EnumType.STRING)
-    private Status status;
+    @Column(name = "status", nullable = false)
+    private String status;
 
     public int getId() {
         return id;
@@ -64,11 +64,11 @@ public class ChatMessageEntity {
         this.createDate = createDate;
     }
 
-    public Status getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 }

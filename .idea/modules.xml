@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/COEproject-.iml" filepath="$PROJECT_DIR$/.idea/COEproject-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coeProject/ChatGroupProducer/ChatGroupProducer.iml" filepath="$PROJECT_DIR$/coeProject/ChatGroupProducer/ChatGroupProducer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coeProject/coeGroup_Chat/coeGroup_Chat/coeGroup_Chat.iml" filepath="$PROJECT_DIR$/coeProject/coeGroup_Chat/coeGroup_Chat/coeGroup_Chat.iml" />
+    </modules>
+  </component>
+</project>
